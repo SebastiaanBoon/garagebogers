@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Afspraak maken | Garage Bogers</title>
+<meta name="description" content="Afspraak maken bij Garage Bogers.">
+<meta property="og:title" content="Garage Bogers, Breda. Vertrouwd sinds 1974">
+<meta property="og:description" content="Occasions met een vaste prijs, deskundig onderhoud en professionele uitlijning.">
+<meta property="og:image" content="images/occ/5.jpg">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="vb-banner" role="note"><span>Voorbeeldontwerp, speciaal voor Garage Bogers gemaakt door Cafe Boon</span><a href="https://cafeboon.com">Meer weten</a></div>
+<header class="top">
+<a class="brand" href="index.html"><img alt="Autobedrijf Jan Bogers" src="images/logo.png"/></a>
+<nav><a href="index.html">Home</a><a href="aanbod.html">Occasions</a><a href="over.html">Over ons</a><a href="contact.html">Contact</a></nav>
+<a class="call" href="tel:+31765141540">Bel 076 514 15 40</a>
+</header>
+<div aria-label="Pagina's" class="sn-bar" role="navigation"><a class="sn-link" href="index.html">Home</a><a class="sn-link" href="aanbod.html">Occasions</a><a class="sn-link" href="over.html">Over ons</a><a class="sn-link" href="contact.html">Contact</a></div>
+<div class="sn-head"><h1>Afspraak maken</h1></div>
+<section class="sn-formsec" id="formulier"><div class="sn-formwrap"><p class="sn-lead">Vul het formulier in. Wij nemen contact met u op om de afspraak te bevestigen.</p><form class="sn-form" id="sn-form"><div class="sn-field"><label for="naam">Naam</label><input id="naam" name="naam" type="text" required autocomplete="name"></div><div class="sn-field"><label for="tel">Telefoonnummer</label><input id="tel" name="tel" type="tel" required autocomplete="tel"></div><div class="sn-field full"><label for="email">E-mailadres</label><input id="email" name="email" type="email" required autocomplete="email"></div><div class="sn-field full"><label for="keuze">Werkzaamheden</label><select id="keuze" name="keuze" required><option value="">Maak een keuze</option><option>APK</option><option>Airco service</option><option>Schadeherstel</option><option>Onderhoudsbeurt</option><option>Reparatie</option><option>Boordcomputer uitlezen</option><option>Uitlijning</option></select></div><div class="sn-field"><label for="datum">Gewenste datum</label><input id="datum" name="datum" type="date" required></div><div class="sn-field"><label for="tijd">Gewenste tijd (optioneel)</label><input id="tijd" name="tijd" type="time"></div><div class="sn-field full"><label for="opm">Opmerking (optioneel)</label><textarea id="opm" name="opm" rows="5"></textarea></div><div class="sn-field full"><button class="btn" type="submit">Afspraak aanvragen</button></div></form></div></section>
+<script>(function(){var f=document.getElementById('sn-form');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return;}var d=document.createElement('div');d.className='sn-done';d.setAttribute('role','status');d.tabIndex=-1;d.innerHTML='<h2>Bedankt voor uw aanvraag</h2><p>Dit is een voorbeeldwebsite van Cafe Boon. Uw aanvraag is daarom niet verstuurd. Neem voor een echte afspraak contact op via <a href="tel:+31765141540">076 514 15 40</a>.</p>';f.parentNode.replaceChild(d,f);d.focus();});})();</script>
+<footer>
+<p>U bent van harte welkom!</p>
+<p class="credit"><a href="https://cafeboon.com">Voorbeeldontwerp door Cafe Boon</a></p>
+</footer>
+<a class="fab" href="tel:+31765141540">Bel</a>
+<script>try{(function(){
+  var n=new Date(),d=n.getDay(),m=n.getHours()+n.getMinutes()/60,el=document.getElementById('status');
+  var r=document.querySelector('tr[data-d="'+d+'"]');if(r)r.className='today';
+  if(d>=1&&d<=5&&m>=8&&m<17){el.textContent='Nu geopend tot 17:00';el.className='tag yes'}
+  else if(d==6&&m>=9&&m<11){el.textContent='Nu geopend tot 11:00';el.className='tag yes'}
+  else{el.textContent='Nu gesloten'}
+})();}catch(e){}</script>
+</body></html>
